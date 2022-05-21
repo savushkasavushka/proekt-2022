@@ -1,0 +1,138 @@
+<HTML lang="ru">
+<HEAD>
+<meta charset="UTF-8" />
+ <TITLE> Ссылки </TITLE> 
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Боковая панель с элементами меню, выдвигающаяся по клику, на чистом css, без использлвания javascript" />
+    <meta name="keywords" content="боковое меню, выдвижное меню, выдвигающееся по клику, боковая панеь, css3, html, css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/left-nav-style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</HEAD>
+
+<BODY link="#00008b" vlink="#30d5c8" alink="white">
+
+<!-- 
+    Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
+
+    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+
+    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента
+    -->
+    <input type="checkbox" id="nav-toggle" hidden>
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <ul>
+            <li><A href="MAIN.html" title="MAIN" target="MAIN">Главная страница</A>
+            <li><b> <p align="center"> Statistica </b> </p>
+            <li><A href="Statistica.html" title="statistica" target="MAIN">«Базовые функции»</A>
+            <li>Лабораторная работа 1<BR>
+<A href="ЛР1S.html" title="ЛР1S" target="MAIN">«Статистическая обработка данных с помощью Statistica»</A> <BR><BR>
+
+<li>Лабораторная работа 2<BR>
+<A href="ЛР2S.html" title="ЛР2S" target="MAIN">«Проверка статистических гипотез. 
+Двух выборочный F-тест для дисперсий. Парный двух выборочный t тест для средних»</A> <BR><BR>
+
+<li>Лабораторная работа 3<BR>
+<A href="ЛР3S.html" title="ЛР3S" target="MAIN">«»</A> <BR><BR>
+
+
+<li><b> <p align="center"> Exсel <br> </b> </p>
+
+<li>Лабораторная работа 1<BR>
+<A href="ЛР1E.html" title="ЛР1E" target="MAIN">«Проверка статистических гипотез о виде распределения при помощи критерия Пирсона (хи-квадрат)»</A> <BR><BR>
+<A href="Xi2Pearson.xlsx">«Инструмент MS Excel»</A> <BR><BR>
+
+<li>Лабораторная работа 2<BR>
+<A href="ЛР2E.html" title="ЛР2E" target="MAIN">«Исследование статистических функций. Статистические методы обработки данных»</A> <BR><BR>
+
+<li>Лабораторная работа 3<BR>
+<A href="ЛР3E.html" title="ЛР3E" target="MAIN">«Корреляция данных с помощью MS Excel»</A> <BR><BR>
+
+
+<li><b> <p align="center"> Maple <br> </b> </p>
+
+<li>Лабораторная работа 1<BR>
+<A href="ЛР1.html" title="ЛР1" target="MAIN">«Построение математических выражений и элементарные вычисления»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 2<BR>
+<A href="ЛР2.html" title="ЛР2" target="MAIN">«Построение графиков функций»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 3<BR>
+<A href="ЛР3.html" title="ЛР3" target="MAIN">«Решение уравнений и неравенств»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 4<BR>
+<A href="ЛР4.html" title="ЛР4" target="MAIN">«Вычисление сумм и произведений»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 5<BR>
+<A href="ЛР5.html" title="ЛР5" target="MAIN">«Преобразование математических выражений»
+</A> <BR>
+<BR>
+
+<li>Лабораторная работа 6<BR>
+<A href="ЛР6.html" title="ЛР6" target="MAIN">«Вычисление пределов»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 7<BR>
+<A href="ЛР7.html" title="ЛР7" target="MAIN">«Комплексные числа»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 8<BR>
+<A href="ЛР8.html" title="ЛР8" target="MAIN">«Работа с матрицами и векторами»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 9<BR>
+<A href="ЛР9.html" title="ЛР9" target="MAIN">«Решение уравнений и неравенств»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 10<BR>
+<A href="ЛР10.html" title="ЛР10" target="MAIN">«Интегрирование и дифференцирование функций»</A> <BR>
+<BR>
+
+<li>Лабораторная работа 11<BR>
+<A href="ЛР11.html" title="ЛР11" target="MAIN">«Решение дифференциальных уравнений»</A> <BR>
+<BR>
+        </ul>
+    </nav>
+    <!-- 
+    Маска (затемнение) основного контента при включенной панели
+    по-умолчанию данная фишка не используется, если оно вам надо,
+		просто расккоментируйте div-контейнер ниже
+		
+    <div class="mask-content"></div>
+		
+		-->
+    <!-- 
+    Далее размещаем любую разметку,
+    много слов, картинки и т.д...
+    -->
+
+
+</BODY>
+</HTML>
